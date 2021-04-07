@@ -68,9 +68,9 @@ def train_01_LEGO_model():
     # true_classes = valid_generator.classes
     # class_labels = list(valid_generator.class_indices.keys())
 
-    history = model.fit_generator(
+    history = model.fit(
         train_generator,
-        epochs=8,
+        epochs=20,
         validation_data=valid_generator,
         verbose=1,
         callbacks=[callbacks]
