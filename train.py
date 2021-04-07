@@ -70,7 +70,7 @@ def train_01_LEGO_model():
 
     history = model.fit_generator(
         train_generator,
-        epochs=10,
+        epochs=8,
         validation_data=valid_generator,
         verbose=1,
         callbacks=[callbacks]
